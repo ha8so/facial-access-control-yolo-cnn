@@ -59,7 +59,7 @@ La démarche suivra les étapes suivantes :
 | Étape | Statut |
 |---------|---------|
 | Mise en place du repository GitHub | ✅ |
-| Ajout du rapport préliminaire (docs/) | 🔄 |
+| Ajout du rapport préliminaire (docs/) | ✅ |
 | EDA + Notebook baseline | ⏳ |
 | Transfer Learning & Ablation | ⏳ |
 | Évaluation & Visualisations | ⏳ |
