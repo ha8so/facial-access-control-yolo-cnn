@@ -1,6 +1,6 @@
 # Pneumonia Detection from Chest X-ray using Deep Learning
 
-## 📌 Contexte du projet
+##  Contexte du projet
 La pneumonie est une infection pulmonaire potentiellement grave qui nécessite un diagnostic rapide. L’analyse manuelle des radiographies thoraciques (Chest X-ray) par un spécialiste reste la méthode courante, mais elle est sujette à la variabilité humaine et peut prendre du temps.  
 L’objectif de ce projet est d’automatiser la détection de la pneumonie à partir d’images médicales en utilisant des techniques de **Computer Vision** et des modèles **Deep Learning pré-entraînés**.
 
@@ -8,7 +8,7 @@ Ce travail s’inscrit dans le cadre d’un projet académique dont le but est d
 
 ---
 
-## 🎯 Objectif
+##  Objectif
 Développer un modèle capable de classifier automatiquement des radiographies pulmonaires en deux classes :
 
 - **Pneumonia**
@@ -28,7 +28,7 @@ Les objectifs techniques incluent :
 
 ---
 
-## 📌 Dataset utilisé
+##  Dataset utilisé
 Nous utiliserons le dataset public :
 
 - **Chest X-ray Pneumonia Dataset (Kaggle)**
@@ -39,7 +39,7 @@ Un split **train / validation / test** sera appliqué afin d’assurer une éval
 
 ---
 
-## 🛠️ Méthodologie prévue
+##  Méthodologie prévue
 
 La démarche suivra les étapes suivantes :
 
@@ -54,7 +54,7 @@ La démarche suivra les étapes suivantes :
 
 ---
 
-## 🚀 Étapes à venir (Roadmap)
+##  Étapes à venir (Roadmap)
 
 | Étape | Statut |
 |---------|---------|
@@ -68,12 +68,12 @@ La démarche suivra les étapes suivantes :
 
 ---
 
-## 🤝 Contribution des membres
+##  Contribution des membres
 Le développement se fera en équipe, en utilisant des **branches séparées** et des **pull requests** afin d'assurer une collaboration propre et transparente.
 
 ---
 
-## 📎 Références
+##  Références
 - Kaggle Dataset — Chest X-ray Pneumonia
 - ResNet, EfficientNet, DenseNet — Papers & documentation
 - Grad-CAM — Selvaraju et al. (2017)
