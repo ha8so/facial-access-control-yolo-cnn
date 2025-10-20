@@ -64,7 +64,7 @@ La démarche suivra les étapes suivantes :
 | Transfer Learning & Ablation | ⏳ |
 | Évaluation & Visualisations | ⏳ |
 | Optimisation & Documentation finale | ⏳ |
-| Rapport final + Soutenance | ⏳ |
+| Presentation final + Soutenance | ⏳ |
 
 ---
 
