@@ -81,6 +81,5 @@ Le développement se fera en équipe, en utilisant des **branches séparées** e
 
 ---
 
-### ✅ Remarque
-Tout le code produit, les notebooks et les résultats seront disponibles dans ce repository afin de permettre un suivi complet du développement du projet par l’enseignant.
+
 
