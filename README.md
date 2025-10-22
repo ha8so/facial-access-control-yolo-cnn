@@ -1,85 +1,69 @@
-# Pneumonia Detection from Chest X-ray using Deep Learning
+# Facial Access Control using YOLO and CNN
 
-##  Contexte du projet
-La pneumonie est une infection pulmonaire potentiellement grave qui nécessite un diagnostic rapide. L’analyse manuelle des radiographies thoraciques (Chest X-ray) par un spécialiste reste la méthode courante, mais elle est sujette à la variabilité humaine et peut prendre du temps.  
-L’objectif de ce projet est d’automatiser la détection de la pneumonie à partir d’images médicales en utilisant des techniques de **Computer Vision** et des modèles **Deep Learning pré-entraînés**.
+## 📌 Contexte du projet
+La reconnaissance faciale est aujourd’hui un élément central des systèmes de sécurité modernes. Elle permet un **contrôle d’accès automatisé, rapide et sans contact**, contrairement aux badges, codes ou cartes, qui sont facilement partageables ou volés.
 
-Ce travail s’inscrit dans le cadre d’un projet académique dont le but est d’apprendre à mener un projet machine learning de bout en bout, tout en adoptant une approche reproductible, rigoureuse et collaborative.
+Cependant, la reconnaissance faciale en conditions réelles reste un défi à cause de :
+- variations de luminosité
+- angles de caméra
+- expressions faciales
+- accessoires (masques, lunettes, ombres)
 
----
-
-##  Objectif
-Développer un modèle capable de classifier automatiquement des radiographies pulmonaires en deux classes :
-
-- **Pneumonia**
-- **Normal**
-
-Les objectifs techniques incluent :
-
-- Construire un **pipeline reproductible**
-- Exploiter le **Transfer Learning**
-- Comparer deux approches :
-  1. **Embeddings + modèles légers** (SVM / Régression Logistique)
-  2. **Fine-tuning de CNN pré-entraînés** (ResNet, EfficientNet, DenseNet)
-- Réaliser une **étude d’ablation**
-- Optimiser l’inférence (**quantization FP16 / INT8**)
-- Évaluer le modèle à l’aide de métriques pertinentes (AUC, F1-score, précision, rappel)
-- Produire des **visualisations explicatives (Grad-CAM)**
+Notre objectif est de concevoir un **pipeline de reconnaissance faciale en deux étapes**, combinant la rapidité de **YOLO** pour détecter les visages et la capacité discriminante d’un **CNN** pour décider si la personne est autorisée ou non.
 
 ---
 
-##  Dataset utilisé
-Nous utiliserons le dataset public :
-
-- **Chest X-ray Pneumonia Dataset (Kaggle)**
-  https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
-
-Il s’agit d’images radiographiques organisées en deux classes : `NORMAL` et `PNEUMONIA`.  
-Un split **train / validation / test** sera appliqué afin d’assurer une évaluation juste et objective.
-
----
-
-##  Méthodologie prévue
-
-La démarche suivra les étapes suivantes :
-
-1. **Exploration des données (EDA)**  
-2. **Prétraitement & Data Augmentation**
-3. **Approche Baseline** (embeddings + modèle léger)
-4. **Approche Transfer Learning** (fine-tuning CNN)
-5. **Ablation Study**
-6. **Évaluation des performances** (AUC, F1, etc.)
-7. **Explicabilité (Grad-CAM)**
-8. **Optimisation de l’inférence (quantization)**
+## 🎯 Objectifs du projet
+- Détecter les visages en temps réel avec YOLO (v5 ou v8)
+- Classifier les visages détectés via un CNN (binaire : *autorisé / non autorisé*)
+- Optimiser l’inférence (ONNX, quantization FP16/INT8)
+- Évaluer la performance avec : *accuracy, F1-score, rappel, AUC-ROC*
+- Étudier l’impact de :
+  - la taille d’image
+  - le seuil de détection
+  - l’augmentation de données
+  - la profondeur du CNN
 
 ---
 
-##  Étapes à venir (Roadmap)
+## 📌 Dataset utilisé
+Nous utiliserons des bases publiques d’images faciales, telles que :
 
+- **LFW — Labeled Faces in the Wild**
+- **CelebA**
+- (optionnel) Dataset interne pour “autorisé / non autorisé”
+
+Chaque image est associée à une étiquette :
+
+| Valeur | Signification |
+|---------|--------------|
+| `1`     | Visage autorisé |
+| `0`     | Visage non autorisé |
+
+---
+
+## 🛠️ Méthodologie prévue (Pipeline)
+1. **Détection du visage (YOLO)**
+2. **Extraction de la zone faciale**
+3. **Classification CNN (ou ResNet/VGG fine-tunée)**
+4. **Étude d’ablation**
+5. **Optimisation d’inférence (ONNX, quantization)**
+6. **Évaluation et visualisation Grad-CAM**
+
+---
+
+## 🚀 Étapes à venir (Roadmap)
 | Étape | Statut |
 |---------|---------|
-| Mise en place du repository GitHub | ✅ |
-| Ajout du rapport préliminaire (docs/) | ✅ |
-| EDA + Notebook baseline | ⏳ |
-| Transfer Learning & Ablation | ⏳ |
-| Évaluation & Visualisations | ⏳ |
-| Optimisation & Documentation finale | ⏳ |
-| Presentation final + Soutenance | ⏳ |
+| Création du repo GitHub | ✅ |
+| Notebook YOLO – détection | ⏳ |
+| CNN – classification | ⏳ |
+| Étude d’ablation | ⏳ |
+| Déploiement / Démo | ⏳ |
+| Rapport final + soutenance | ⏳ |
 
 ---
 
-##  Contribution des membres
-Le développement se fera en équipe, en utilisant des **branches séparées** et des **pull requests** afin d'assurer une collaboration propre et transparente.
-
----
-
-##  Références
-- Kaggle Dataset — Chest X-ray Pneumonia
-- ResNet, EfficientNet, DenseNet — Papers & documentation
-- Grad-CAM — Selvaraju et al. (2017)
-- ONNX / TensorRT — optimisation inference
-
----
-
-
+## 🤝 Collaboration Git
+Chaque membre travaille sur **sa branche** :
 
