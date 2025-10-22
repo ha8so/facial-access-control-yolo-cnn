@@ -1,6 +1,6 @@
 # Facial Access Control using YOLO and CNN
 
-## 📌 Contexte du projet
+##  Contexte du projet
 La reconnaissance faciale est aujourd’hui un élément central des systèmes de sécurité modernes. Elle permet un **contrôle d’accès automatisé, rapide et sans contact**, contrairement aux badges, codes ou cartes, qui sont facilement partageables ou volés.
 
 Cependant, la reconnaissance faciale en conditions réelles reste un défi à cause de :
@@ -13,7 +13,7 @@ Notre objectif est de concevoir un **pipeline de reconnaissance faciale en deux 
 
 ---
 
-## 🎯 Objectifs du projet
+##  Objectifs du projet
 - Détecter les visages en temps réel avec YOLO (v5 ou v8)
 - Classifier les visages détectés via un CNN (binaire : *autorisé / non autorisé*)
 - Optimiser l’inférence (ONNX, quantization FP16/INT8)
@@ -26,7 +26,7 @@ Notre objectif est de concevoir un **pipeline de reconnaissance faciale en deux 
 
 ---
 
-## 📌 Dataset utilisé
+##  Dataset utilisé
 Nous utiliserons des bases publiques d’images faciales, telles que :
 
 - **LFW — Labeled Faces in the Wild**
@@ -42,7 +42,7 @@ Chaque image est associée à une étiquette :
 
 ---
 
-## 🛠️ Méthodologie prévue (Pipeline)
+##  Méthodologie prévue (Pipeline)
 1. **Détection du visage (YOLO)**
 2. **Extraction de la zone faciale**
 3. **Classification CNN (ou ResNet/VGG fine-tunée)**
@@ -52,7 +52,7 @@ Chaque image est associée à une étiquette :
 
 ---
 
-## 🚀 Étapes à venir (Roadmap)
+##  Étapes à venir (Roadmap)
 | Étape | Statut |
 |---------|---------|
 | Création du repo GitHub | ✅ |
@@ -64,6 +64,6 @@ Chaque image est associée à une étiquette :
 
 ---
 
-## 🤝 Collaboration Git
+##  Collaboration Git
 Chaque membre travaille sur **sa branche** :
 
